@@ -1,6 +1,6 @@
 # Project Name
 
-###[Demo](https://link-to-github-pages.com)
+###[Demo](https://github.com/maximkacmm/home_work_1.git)
 
 ### Description
 
@@ -9,5 +9,3 @@
 ### Technologies are used
 
 - *HTML*
-- *CSS*
-- ...
