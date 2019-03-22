@@ -1,6 +1,6 @@
 # Project Name
 
-###[Demo]( https://maximkacmm.github.io/home_work_1/)
+###[Demo]( https://maximkacmm.github.io/sports-app-landing/)
 
 ### Description
 Using our site you will get an unforgettable individual football experience that will allow you
