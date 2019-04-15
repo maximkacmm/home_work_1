@@ -1,91 +1,165 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
-
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <title>sports-app-landing</title>
 </head>
 <body>
-<section>
-  <div class="logo">
-    <a href="javascript:void(0)">
-      <img src="../img/Vector.png" alt="Vector">
-      Sport
-    </a>
+<section class="first">
+  <div class="wrap-first">
+    <div class="logo">
+      <a class="a-logo" href="javascript:void(0)">
+        <img src="img/LOGO.png" alt="Logo Sports">
+      </a>
+    </div>
+    <h1 class="h1">
+      Get a personalized football
+      experience tailored just for you
+    </h1>
+    <p class="p-first">
+      Achieve super-fan status by getting tailored updates and
+      up-to-the-minute information on your team.
+    </p>
+    <div class="button">
+      <a class="a-button-text" href="https://support.apple.com">
+        <div class="a-button">
+          <div class="img-apple"></div>
+          <div class="button-text">
+            <p class="p-button">Download on the </p>
+            <h5 class="h5-app">App Store</h5>
+          </div>
+        </div>
+      </a>
+      <a class="a-button-text" href="https://play.google.com">
+        <div class="a-button">
+          <div class="img-google"></div>
+          <div class="button-text">
+            <p class="p-button">Download on </p>
+            <h5 class="h5-google">Google <span class="span-google">play</span></h5>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
-  <h1>
-    Get a personalized football
-    experience tailored just for you
-  </h1>
-  <p>
-    Achieve super-fan status by getting tailored updates and
-    up-to-the-minute information on your team.
-  </p>
-  <a href="https://support.apple.com">
-    <img src="../img/logo.png" alt="Apple">
-    Download on the
-    <br>App Store
-  </a>
-  <a href="https://play.google.com">
-    <img src="../img/icon-google.png" alt="Google play">
-    Download on
-    <br>Google play
-  </a>
 </section>
-<section>
-  <time>Sat, 12:35pm</time>
-  <img src="../img/arsenal.png" alt="">
-  <img src="../img/chelsea.png" alt="">
-  <h3>
-    Arsenal v
-    Chelsea
-  </h3>
-  <p>
-    Friendly Match
-  </p>
-  <p>
-    Turn on all match notifications
-    <input type="checkbox">
-  </p>
-  <video src="../img/highlights.mp4" width="360px" height="218px"
-         controls="controls" poster="../img/Rectangle.png" preload="metadata">
-  </video>
-  <p>
-    WHAT IT DOES
-  </p>
-  <h2>
-    An Enhanced Football Experience
-  </h2>
-  <p>
-    The Guardian Live Scores app is your go to app for live scores and watching Premier League goals… Get
-    in
-    there, what a result!
-  </p>
-  <p>
-    As well as videos of all the goals, you can watch match highlights, check out the latest scores and
-    results and stay bang-up-to-date with the big football stories from The Guardian publication.
-  </p>
-  <a href="javascript:void(0)">Learn more</a>
+<section class="second">
+  <div class="wrap-second">
+    <div class="reminder_container">
+      <div class="reminder-wrap">
+        <div class="reminder">
+          <div class="reminder-text">
+            <time datetime="Saturday 12:35pm" class="time">Sat, 12:35pm</time>
+            <h3 class="h3-reminder">
+              Arsenal v
+              <br>
+              Chelsea
+            </h3>
+            <p class="p-reminder">
+              Friendly Match
+            </p>
+          </div>
+          <div class="reminder-img">
+            <div class="img-arsenal">
+              <img src="../img/arsenal.png" alt="">
+            </div>
+            <div class="img-chelsea">
+              <img src="../img/chelsea.png" alt="">
+            </div>
+          </div>
+          <div class="notifications">
+            <p class="p-notifications">
+              Turn on all match notifications
+            </p>
+            <span class="toggle-bg">
+            <input type="radio" name="toggle" value="off">
+            <input type="radio" name="toggle" value="on">
+            <span class="switch"></span>
+        </span>
+          </div>
+        </div>
+      </div>
+      <div class="video-wrap">
+        <video src="video/highlights.mp4" width="360px" height="218px"
+               controls="controls" poster="../img/Rectangle.png" preload="metadata">
+        </video>
+      </div>
+    </div>
+    <div class="second-description">
+      <p class="p-description">
+        WHAT IT DOES
+      </p>
+      <h2 class="h2-description">
+        An Enhanced Football Experience
+      </h2>
+      <p class="p-description-content">
+        The Guardian Live Scores app is your go to app for live scores and watching Premier League goals… Get
+        in
+        there, what a result!
+      </p>
+      <p class="p-description-content">
+        As well as videos of all the goals, you can watch match highlights, check out the latest scores and
+        results and stay bang-up-to-date with the big football stories from The Guardian publication.
+      </p>
+      <a class="a-description" href="javascript:void(0)">Learn more</a>
+    </div>
+  </div>
 </section>
 
 <section>
-  <p>
-    GET STARTED
-  </p>
-  <h2>
-    User-friendly Interface
-  </h2>
-  <p>
-    The in-game goal clips from every Premier League match are available to Guardian TV customers with a
-    Guardian subscription.
-  </p>
-  <p>
-    So, if you’re not a subscriber, now’s the time to make that savvy call. If that’s a step too far for
-    you,
-    you can still watch loads of firecracker Premier League action as long as you sign in with a free
-    Guardian iD.
-  </p>
-  <a href="javascript:void(0)">Learn more</a>
+  <div class="third">
+    <div class="wrap-third">
+      <div class="wrap-third-container">
+        <div class="interface-discription">
+          <p class="p-interface-discription">
+            GET STARTED
+          </p>
+          <h2 class="h2-interface-discription">
+            User-friendly Interface
+          </h2>
+          <p class="p-interface-discription-content">
+            The in-game goal clips from every Premier League match are available to Guardian TV customers with a
+            Guardian subscription.
+          </p>
+          <p class="p-interface-discription-content">
+            So, if you’re not a subscriber, now’s the time to make that savvy call. If that’s a step too far for
+            you,
+            you can still watch loads of firecracker Premier League action as long as you sign in with a free
+            Guardian iD.
+          </p>
+          <a class="a-interface-discription" href="javascript:void(0)">Learn more</a>
+        </div>
+      </div>
+      <div class="third-product">
+        <div class="div-blok">
+          <div class="div-bell">
+            <img src="img/bell.svg" alt="bell">
+            <div class="div-bell-number"><p>7</p></div>
+          </div>
+          <div class="div-phone">
+            <img src="img/icon-phone.svg" alt="">
+          </div>
+          <div class="div-point">
+            <div class="point-inner"></div>
+          </div>
+          <div class="div-circle-1 centerd"></div>
+          <div class="div-circle-2 centerd"></div>
+          <div class="div-circle-3 centerd"></div>
+          <div class="div-circle-4 centerd"></div>
+          <div class="div-circle-5 centerd"></div>
+          <div class="div-circle-6 centerd"></div>
+          <div class="div-circle-7 centerd"></div>
+          <div class="div-circle-8 centerd"></div>
+          <div class="div-circle-9 centerd"></div>
+        </div>
+        <div class="div-img">
+          <img srcset="" class="img-phone" src="img/phone.png" alt="img phone">
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <section>
   <h2>
@@ -242,7 +316,7 @@
     <br>App Store
   </a>
   <a href="https://play.google.com">
-    <img src="../img/icon-google.png" alt="Google play">
+    <img src="img/icon-google.png" alt="Google play">
     Download on
     <br>Google play
   </a>

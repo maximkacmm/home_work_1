@@ -1,5 +1,5 @@
 {
-  "name": "home_work_1",
+  "name": "sports-app-landing",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -25,7 +25,7 @@
     "@mate-academy/editor-config": "latest",
     "@mate-academy/eslint-config": "latest",
     "browser-sync": "^2.26.3",
-    "eslint": "^5.15.3",
+    "eslint": "^5.13.0",
     "foreach-cli": "^1.8.1",
     "html-validator-cli": "^5.0.0",
     "htmllint-cli": "0.0.7",
