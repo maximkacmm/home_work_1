@@ -9,16 +9,20 @@ body {
 }
 
 :root {
-  --font1: Lato;
-  --font2: Roboto;
-  --black: #333333;
+  --font1: lato;
+  --font2: roboto;
+  --black: #333;
   --gray: #4f4f4f;
   --blue: #00adee;
-  --white: #ffffff;
+  --white: #fff;
   --background1: #f4f6f9;
-  --background-button: #000000;
-  --background-notifications: #eeeeee;
+  --background-button: #000;
+  --background-notifications: #eee;
   --background-toggle: #979797;
+  --rgba1: rgba(0, 0, 0, 0.25);
+  --rgba2: rgba(51, 51, 51, 0.1);
+  --rgba3: rgba(255, 255, 255, 0);
+  --rgba4: rgba(255, 255, 255, 0.5);
 }
 
 .first {
@@ -36,7 +40,7 @@ body {
 .logo {
   width: 99px;
   height: 22px;
-  padding: 63px 0 133px 0;
+  padding: 63px 0 133px;
   margin-left: 163px;
 }
 
@@ -148,7 +152,11 @@ body {
 .wrap-second {
   width: 1440px;
   margin: 0 auto;
-  background: linear-gradient(270deg, #FFFFFF 48.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5) url("img/bgc2.png") no-repeat;
+  background: linear-gradient(270deg,
+  var(--white) 48.16%,
+  var(--rgba3) 67.14%),
+    var(--rgba4)
+    url("img/bgc2.png") no-repeat;
   background-size: contain;
   background-position: left;
   display: flex;
@@ -173,6 +181,7 @@ body {
   flex-wrap: wrap;
   position: relative;
   z-index: 1;
+  border-radius: 0 0 4px 4px;
 }
 
 .reminder-text {
@@ -228,7 +237,7 @@ body {
 
 .notifications {
   background-color: var(--background-notifications);
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0 0 4px 4px;
   width: 360px;
   display: flex;
   align-items: center;
@@ -244,56 +253,52 @@ body {
 }
 
 /*https://webformyself.com/sozdanie-pereklyuchatelya-tipa-radio-v-css3-bez-primeneniya-javascript/
-взял тут и немного подогнал под макет*/
+I took it here and adjusted it a bit*/
 
 .toggle-bg {
   border-radius: 8px;
-  background: var(--background-toggle); /* Вам понадобится видеть область с тумблером, но не стесняйтесь изменить цвет */
-  display: block; /* ...Чтобы можно было установить высоту и ширину */
-  float: left; /* ...Чтобы он не занимал всю ширину страницы */
-  height: 13px; /* Если хотите, можно это попозже изменить */
-  position: relative; /* Требуется, чтобы тумблер мог передвигаться */
-  width: 32px; /* Это тоже можно позже изменить */
+  background: var(--background-toggle);
+  display: block;
+  float: left;
+  height: 13px;
+  position: relative;
+  width: 32px;
   margin: 0 auto;
 }
 
 .toggle-bg input {
   height: 28px;
   left: 0;
-  margin: 0; /* Сбросьте поля и отступ */
-  opacity: 0; /* Невидим! */
+  margin: 0;
+  opacity: 0;
   padding: 0;
   position: absolute;
-  top: -10px; /* Сдвиньте по вертикали */
+  top: -10px;
   width: 36px;
-  z-index: 2; /* Нам нужно, чтобы вход input находился сверху span.switch, которому мы назначим z-index в 1 */
+  z-index: 2;
 }
 
 .switch {
   border-radius: 50%;
-  transition: left .2s ease;
+  transition: left 0.2s ease;
   background: var(--white);
   display: block;
   float: left;
   height: 20px;
-  left: -1px; /* Это – начальная точка. При добавлении border radius показывается немного фона, если использовать left: 0;, поэтому лучше всего применить -1px.*/
+  left: -1px;
   position: relative;
-  top: -4px; /* ...Чтобы отцентрировать его по вертикали */
+  top: -4px;
   width: 20px;
-  z-index: 1; /* Помните, он должен быть под невидимыми входами inputs */
+  z-index: 1;
 }
 
 .toggle-bg input:checked ~ .switch {
   left: -1px;
 }
 
-/* Исходная позиция тумблера */
-
 .toggle-bg input ~ :checked ~ .switch {
   left: 13px;
 }
-
-/* окончательная относительная позиция переключателя */
 
 .toggle-bg input:checked {
   z-index: 0;
@@ -412,9 +417,9 @@ body {
 }
 
 .div-img {
-  width: 300px;
+  width: 350px;
   margin-left: -35px;
-  margin-top: 35px;
+  margin-top: 45px;
 }
 
 .div-blok {
@@ -427,17 +432,15 @@ body {
   height: 91px;
   background-color: var(--white);
   position: absolute;
-  left: -145px;
-  top: -190px;
+  left: -165px;
+  top: -220px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   z-index: 2;
-  box-shadow: 0px 3.13793px 15.6897px
-  rgba(0, 0, 0, 0.25),
-  0px 2.51034px 6.27586px
-  rgba(51, 51, 51, 0.1);
+  box-shadow: 0 3.14px 15.69px var(--rgba1),
+    0 2.51px 6.28px var(--rgba2);
 }
 
 .div-phone {
@@ -448,14 +451,12 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 60px;
-  top: 70px;
+  left: 85px;
+  top: 95px;
   background-color: var(--white);
   z-index: 2;
-  box-shadow: 0px 3.13793px 15.6897px
-  rgba(0, 0, 0, 0.25),
-  0px 2.51034px 6.27586px
-  rgba(51, 51, 51, 0.1);
+  box-shadow: 0 3.14px 15.69px var(--rgba1),
+    0 2.51px 6.28px var(--rgba2);
 }
 
 .div-point {
@@ -467,12 +468,10 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: -200px;
-  top: 100px;
-  box-shadow: 0px 3.13793px 15.6897px
-  rgba(0, 0, 0, 0.25),
-  0px 2.51034px 6.27586px
-  rgba(51, 51, 51, 0.1);
+  left: -260px;
+  top: 150px;
+  box-shadow: 0 3.14px 15.69px var(--rgba1),
+    0 2.51px 6.28px var(--rgba2);
 }
 
 .point-inner {
@@ -544,7 +543,7 @@ body {
   border: 1px solid var(--blue);
   border-radius: 50%;
   z-index: -1;
-  opacity: 0.30;
+  opacity: 0.3;
 }
 
 .div-circle-5 {
@@ -564,7 +563,7 @@ body {
   border: 1px solid var(--blue);
   border-radius: 50%;
   z-index: -1;
-  opacity: 0.20;
+  opacity: 0.2;
 }
 
 .div-circle-7 {
@@ -584,7 +583,7 @@ body {
   border: 1px solid var(--blue);
   border-radius: 50%;
   z-index: -1;
-  opacity: 0.10;
+  opacity: 0.1;
 }
 
 .div-circle-9 {
