@@ -19,6 +19,7 @@ body {
   --background-button: #000;
   --background-notifications: #eee;
   --background-toggle: #979797;
+  --switch-bgc: #49bc7c;
   --rgba1: rgba(0, 0, 0, 0.25);
   --rgba2: rgba(51, 51, 51, 0.1);
   --rgba3: rgba(255, 255, 255, 0);
@@ -307,6 +308,7 @@ I took it here and adjusted it a bit*/
 
 .toggle-bg input ~ :checked ~ .switch {
   left: 13px;
+  background-color: var(--switch-bgc);
 }
 
 .toggle-bg input:checked {
