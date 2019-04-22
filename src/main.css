@@ -157,12 +157,12 @@ body {
 }
 
 .second {
-  background-color: var(--white);
   background: linear-gradient(270deg,
   var(--white) 48.16%,
   var(--rgba3) 67.14%),
-  var(--rgba4)
-  url("img/bgc2.png") no-repeat;
+    var(--rgba4)
+    url("img/bgc2.png") no-repeat;
+  background-color: var(--white);
   background-size: contain;
   background-position: left;
 }
@@ -308,59 +308,6 @@ body {
 .switch__input:checked ~ .switch__circle {
   left: 100%;
 }
-/*https://webformyself.com/sozdanie-pereklyuchatelya-tipa-radio-v-css3-bez-primeneniya-javascript/
-I took it here and adjusted it a bit*/
-
-/*!*.toggle-bg {*!*/
-  /*!*border-radius: 8px;*!*/
-  /*!*background: var(--background-toggle);*!*/
-  /*!*display: block;*!*/
-  /*!*float: left;*!*/
-  /*!*height: 13px;*!*/
-  /*!*position: relative;*!*/
-  /*!*width: 32px;*!*/
-  /*!*margin: auto;*!*/
-/*!*}*!*/
-
-/*!*.toggle-bg input {*!*/
-  /*!*height: 28px;*!*/
-  /*!*left: 0;*!*/
-  /*!*margin: 0;*!*/
-  /*!*opacity: 0;*!*/
-  /*!*padding: 0;*!*/
-  /*!*position: absolute;*!*/
-  /*!*top: -10px;*!*/
-  /*!*width: 36px;*!*/
-  /*!*z-index: 2;*!*/
-/*!*}*!*/
-
-/*!*.switch {*!*/
-  /*!*border-radius: 50%;*!*/
-  /*!*transition: left 0.2s ease;*!*/
-  /*!*background: var(--white);*!*/
-  /*!*display: block;*!*/
-  /*!*float: left;*!*/
-  /*!*height: 20px;*!*/
-  /*!*left: -1px;*!*/
-  /*!*position: relative;*!*/
-  /*!*top: -4px;*!*/
-  /*!*width: 20px;*!*/
-  /*!*z-index: 1;*!*/
-/*!*}*!*/
-
-/*.toggle-bg input:checked ~ .switch {*/
-  /*left: -1px;*/
-/*}*/
-
-/*.toggle-bg input ~ :checked ~ .switch {*/
-  /*left: 13px;*/
-  /*background-color: var(--switch-bgc);*/
-/*}*/
-
-/*.toggle-bg input:checked {*/
-  /*z-index: 0;*/
-  /*background: var(--switch-bgc);*/
-/*}*/
 
 .video-wrap {
   width: 360px;
@@ -673,12 +620,14 @@ I took it here and adjusted it a bit*/
   display: flex;
   flex-direction: column;
 }
+
 .fourth-ul {
   display: flex;
   flex-wrap: wrap;
   margin: 59px 160px 0 125px;
   justify-content: space-between;
 }
+
 .fourth-h2 {
   font-family: var(--font1);
   font-weight: bold;
@@ -708,9 +657,8 @@ I took it here and adjusted it a bit*/
 }
 
 .fourth-img {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-
 
 .beenFeatured {
   padding-top: 57px;
@@ -749,8 +697,8 @@ margin-bottom: 10px;
 }
 
 .sentence {
+  background: url("img/sentencebgc.png")no-repeat;
   background-color: var(--white);
-  background: url("img/sentencebgc.png") no-repeat;
   background-size: contain;
   background-position: left;
   padding-top: 105px;
@@ -785,21 +733,22 @@ margin-bottom: 10px;
   color: var(--gray);
   margin-bottom: 28px;
 }
- .sentence-button {
-   max-width: 348px;
-   display: flex;
-   justify-content: space-between;
- }
 
- .footer {
-   background-color: var(--blue);
- }
+.sentence-button {
+  max-width: 348px;
+  display: flex;
+  justify-content: space-between;
+}
 
- .footer-wraper {
-   margin: 0 auto;
-   width: 1400px;
-   display: flex;
- }
+.footer {
+  background-color: var(--blue);
+}
+
+.footer-wraper {
+  margin: 0 auto;
+  width: 1400px;
+  display: flex;
+}
 
 .footer-logo {
   width: 99px;
