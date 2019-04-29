@@ -425,18 +425,18 @@ body {
   margin-top: -6px;
 }
 
-.div-img {
+.img {
   width: 352px;
   margin-left: -38px;
   margin-top: 64px;
 }
 
-.div-blok {
+.blok {
   width: 10px;
   position: absolute;
 }
 
-.div-bell {
+.bell {
   width: 91px;
   height: 91px;
   background-color: var(--white);
@@ -452,7 +452,7 @@ body {
     0 2.51px 6.28px var(--rgba2);
 }
 
-.div-phone {
+.phone {
   width: 91px;
   height: 91px;
   border-radius: 50%;
@@ -475,7 +475,7 @@ body {
   background-color: var(--blue);
 }
 
-.div-bell-number {
+.bell-number {
   background-color: var(--blue);
   color: var(--white);
   font-family: var(--font1);
@@ -519,7 +519,7 @@ body {
   }
 }
 
-.div-point {
+.point {
   background-color: var(--white);
   width: 30px;
   height: 30px;
@@ -532,7 +532,7 @@ body {
     0 2px 6px var(--rgba2);
 }
 
-.div-circle-1 {
+.circle-1 {
   position: absolute;
   width: 400px;
   height: 400px;
@@ -541,7 +541,7 @@ body {
   z-index: -1;
 }
 
-.div-circle-2 {
+.circle-2 {
   position: absolute;
   width: 600px;
   height: 600px;
@@ -550,7 +550,7 @@ body {
   z-index: -1;
 }
 
-.div-circle-3 {
+.circle-3 {
   position: absolute;
   width: 800px;
   height: 800px;
@@ -560,7 +560,7 @@ body {
   opacity: 0.35;
 }
 
-.div-circle-4 {
+.circle-4 {
   position: absolute;
   width: 1000px;
   height: 1000px;
@@ -570,7 +570,7 @@ body {
   opacity: 0.3;
 }
 
-.div-circle-5 {
+.circle-5 {
   position: absolute;
   width: 1200px;
   height: 1200px;
@@ -580,7 +580,7 @@ body {
   opacity: 0.25;
 }
 
-.div-circle-6 {
+.circle-6 {
   position: absolute;
   width: 1400px;
   height: 1400px;
@@ -590,7 +590,7 @@ body {
   opacity: 0.2;
 }
 
-.div-circle-7 {
+.circle-7 {
   position: absolute;
   width: 1600px;
   height: 1600px;
@@ -600,7 +600,7 @@ body {
   opacity: 0.15;
 }
 
-.div-circle-8 {
+.circle-8 {
   position: absolute;
   width: 1800px;
   height: 1800px;
@@ -610,7 +610,7 @@ body {
   opacity: 0.1;
 }
 
-.div-circle-9 {
+.circle-9 {
   position: absolute;
   width: 2000px;
   height: 2000px;
@@ -902,7 +902,7 @@ p.fourth-p:before {
   height: 160px;
 }
 
-.div__carousel-li__top {
+.carousel-li__top {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -911,13 +911,13 @@ p.fourth-p:before {
   margin-top: 15px;
 }
 
-.div__top__left {
+.top__left {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.div__carousel-p {
+.vid__carousel-p {
   margin: 18px 0 24px;
 }
 
