@@ -354,12 +354,15 @@ body {
   text-decoration: none;
 }
 
+.third {
+  overflow: hidden;
+}
+
 .wrap-third {
   width: 1120px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 .wrap-third-container {
