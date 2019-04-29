@@ -663,6 +663,10 @@ body {
   line-height: 23px;
 }
 
+p.fourth-p:before {
+  content: "• ";
+}
+
 .bottom-li {
   margin-bottom: 40px;
 }
